@@ -1,0 +1,161 @@
+.location {
+  padding: var(--section-py) 0;
+  background: var(--white);
+}
+
+.location__inner {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* ── Info column ── */
+.location__info .section-title {
+  margin-bottom: 1.25rem;
+}
+
+.location__detail {
+  display: flex;
+  gap: 0.9rem;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.location__detail-icon {
+  color: var(--green-600);
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.location__detail-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gray-400);
+  margin-bottom: 0.2rem;
+}
+
+.location__detail-value {
+  font-size: 0.95rem;
+  color: var(--gray-800);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+a.location__detail-value:hover {
+  color: var(--green-600);
+}
+
+.location__address-link span {
+  font-size: 0.82rem;
+  color: var(--green-600);
+  font-weight: 600;
+}
+
+/* ── Hours ── */
+.location__hours {
+  margin-bottom: 1.75rem;
+}
+
+.location__hours-header {
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.location__hours-header .location__detail-label {
+  margin-bottom: 0;
+}
+
+.location__hours-list {
+  list-style: none;
+  border: 1px solid var(--gray-200);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.location__hour-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.55rem 1rem;
+  font-size: 0.85rem;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.location__hour-row:last-child {
+  border-bottom: none;
+}
+
+.location__hour-day {
+  color: var(--gray-700);
+  font-weight: 500;
+}
+
+.location__hour-time {
+  color: var(--green-700);
+  font-weight: 600;
+}
+
+.location__hour-row--closed .location__hour-time {
+  color: var(--gray-400);
+  font-weight: 400;
+}
+
+.location__hour-row--closed .location__hour-day {
+  color: var(--gray-400);
+}
+
+/* ── Review button ── */
+.location__review-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.25rem;
+  background: #FBBC04;
+  color: #1a1a1a;
+  border-radius: 6px;
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background var(--transition), transform var(--transition);
+}
+
+.location__review-btn:hover {
+  background: #f0b800;
+  transform: translateY(-1px);
+}
+
+/* ── Map ── */
+.location__map-wrap {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+  border: 1px solid var(--gray-200);
+  height: 520px;
+}
+
+.location__map {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .location__inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .location__map-wrap {
+    height: 380px;
+  }
+}

@@ -1,0 +1,209 @@
+.machinery {
+  background: var(--green-950);
+  padding: var(--section-py) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.machinery::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 50% at 100% 100%, rgba(22,163,74,0.07) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.machinery__inner {
+  position: relative;
+  z-index: 1;
+}
+
+.machinery__header {
+  max-width: 600px;
+  margin-bottom: 3.5rem;
+}
+
+.machinery__header .divider {
+  margin-bottom: 1.25rem;
+}
+
+/* ── Featured machine card ── */
+.machinery__featured {
+  background: rgba(22,163,74,0.08);
+  border: 1px solid rgba(74,222,128,0.2);
+  border-radius: 12px;
+  padding: 2.5rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.machinery__featured-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.8rem;
+  background: var(--green-600);
+  color: var(--white);
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 100px;
+  margin-bottom: 1.75rem;
+}
+
+.machinery__featured-content {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.machinery__icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(5,46,22,0.5);
+  border: 1px solid rgba(74,222,128,0.15);
+  border-radius: 10px;
+  padding: 1.5rem;
+  animation: float 4s ease-in-out infinite;
+}
+
+.machinery__excavator-svg {
+  width: 100%;
+  height: auto;
+}
+
+.machinery__featured-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.1;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.01em;
+}
+
+.machinery__featured-title span {
+  color: var(--green-400);
+}
+
+.machinery__featured-sub {
+  display: block;
+  font-size: 1rem;
+  color: var(--green-200, #bbf7d0) !important;
+  font-weight: 500;
+  margin-top: 0.25rem;
+}
+
+.machinery__featured-desc {
+  font-size: 0.9rem;
+  color: var(--green-100);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.machinery__featured-desc strong {
+  color: var(--green-400);
+}
+
+.machinery__specs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem 1.5rem;
+}
+
+.machinery__spec {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.machinery__spec-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--green-500);
+}
+
+.machinery__spec-value {
+  font-size: 0.88rem;
+  color: var(--white);
+  font-weight: 500;
+}
+
+/* ── Feature cards ── */
+.machinery__features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+.machinery__feature {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(74,222,128,0.1);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: background var(--transition), border-color var(--transition);
+}
+
+.machinery__feature:hover {
+  background: rgba(22,163,74,0.1);
+  border-color: rgba(74,222,128,0.25);
+}
+
+.machinery__feature-icon {
+  color: var(--green-400);
+  margin-bottom: 0.9rem;
+}
+
+.machinery__feature-title {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+.machinery__feature-desc {
+  font-size: 0.82rem;
+  color: var(--green-100);
+  line-height: 1.7;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .machinery__features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .machinery__featured-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .machinery__icon-wrap {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .machinery__specs {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 540px) {
+  .machinery__features {
+    grid-template-columns: 1fr;
+  }
+
+  .machinery__featured {
+    padding: 1.5rem;
+  }
+}

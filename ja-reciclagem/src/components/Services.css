@@ -1,0 +1,166 @@
+/* ── Materiais section ── */
+.services__materiais-wrap {
+  padding: var(--section-py) 1.5rem;
+}
+
+.services__header {
+  max-width: 560px;
+  margin-bottom: 3rem;
+}
+
+.services__header--center {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+}
+
+.services__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.services__card {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: 8px;
+  padding: 2rem 1.75rem;
+  transition: box-shadow var(--transition), transform var(--transition), border-color var(--transition);
+}
+
+.services__card:hover {
+  box-shadow: 0 8px 32px rgba(22,163,74,0.1);
+  transform: translateY(-3px);
+  border-color: var(--green-200, #bbf7d0);
+}
+
+.services__card-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 8px;
+  background: var(--green-50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--green-600);
+  margin-bottom: 1.25rem;
+}
+
+.services__card-title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--gray-900);
+  margin-bottom: 0.6rem;
+  letter-spacing: 0.01em;
+}
+
+.services__card-desc {
+  font-size: 0.9rem;
+  color: var(--gray-500);
+  line-height: 1.7;
+}
+
+/* ── How it works (dark band) ── */
+.services__how {
+  background: var(--green-900);
+  padding: var(--section-py) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.services__how::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 60% 80% at 50% 50%, rgba(22,163,74,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.services__steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+/* connector line between steps */
+.services__steps::before {
+  content: '';
+  position: absolute;
+  top: 1.5rem;
+  left: calc(16.6% + 1.5rem);
+  right: calc(16.6% + 1.5rem);
+  height: 2px;
+  background: linear-gradient(90deg, var(--green-700), var(--green-600), var(--green-700));
+  pointer-events: none;
+}
+
+.services__step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.services__step-num {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--green-500);
+  margin-bottom: 0.5rem;
+}
+
+.services__step-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--green-800);
+  border: 2px solid var(--green-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--green-400);
+  margin-bottom: 1.25rem;
+}
+
+.services__step-title {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+.services__step-desc {
+  font-size: 0.88rem;
+  color: var(--green-100);
+  line-height: 1.7;
+  max-width: 240px;
+}
+
+.services__how-cta {
+  display: flex;
+  justify-content: center;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .services__cards {
+    grid-template-columns: 1fr;
+  }
+
+  .services__steps {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .services__steps::before {
+    display: none;
+  }
+}

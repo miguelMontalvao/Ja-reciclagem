@@ -1,0 +1,207 @@
+/* =========================================
+   J.A Reciclagem — Design System
+   Palette 60/30/10:
+   60% → Forest Green (#16a34a, #15803d, #14532d)
+   30% → Gray tones (#f3f4f6, #6b7280, #374151)
+   10% → White (#ffffff)
+   ========================================= */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Greens — 60% */
+  --green-50:  #f0fdf4;
+  --green-100: #dcfce7;
+  --green-400: #4ade80;
+  --green-500: #22c55e;
+  --green-600: #16a34a;
+  --green-700: #15803d;
+  --green-800: #166534;
+  --green-900: #14532d;
+  --green-950: #052e16;
+
+  /* Grays — 30% */
+  --gray-50:  #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+
+  /* White — 10% */
+  --white: #ffffff;
+
+  /* Typography */
+  --font-display: 'Oswald', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Spacing */
+  --section-py: 5rem;
+  --section-py-sm: 3rem;
+
+  /* Transitions */
+  --transition: 0.25s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--gray-800);
+  background: var(--white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--gray-100); }
+::-webkit-scrollbar-thumb { background: var(--green-700); border-radius: 3px; }
+
+/* ── Utility ── */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section-eyebrow {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--green-600);
+  margin-bottom: 0.75rem;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: var(--gray-900);
+}
+
+.section-title--light {
+  color: var(--white);
+}
+
+.section-lead {
+  font-size: 1.05rem;
+  color: var(--gray-600);
+  max-width: 560px;
+  line-height: 1.75;
+}
+
+.section-lead--light {
+  color: var(--green-100);
+}
+
+/* ── Buttons ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.75rem;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: background var(--transition), color var(--transition), border-color var(--transition), transform var(--transition);
+  white-space: nowrap;
+}
+
+.btn:active { transform: translateY(1px); }
+
+.btn-primary {
+  background: var(--green-600);
+  color: var(--white);
+}
+.btn-primary:hover {
+  background: var(--green-700);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--white);
+  border-color: var(--white);
+}
+.btn-outline:hover {
+  background: var(--white);
+  color: var(--green-800);
+}
+
+.btn-whatsapp {
+  background: #25D366;
+  color: var(--white);
+}
+.btn-whatsapp:hover {
+  background: #1ebe5d;
+}
+
+/* ── Animations ── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse-ring {
+  0%   { transform: scale(1); box-shadow: 0 0 0 0 rgba(37,211,102,0.5); }
+  70%  { transform: scale(1.05); box-shadow: 0 0 0 12px rgba(37,211,102,0); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-8px); }
+}
+
+.animate-fade-up {
+  animation: fadeInUp 0.65s ease both;
+}
+
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+
+/* ── Divider ── */
+.divider {
+  width: 3rem;
+  height: 3px;
+  background: var(--green-600);
+  margin-bottom: 1.5rem;
+}
+
+.divider--light {
+  background: var(--green-400);
+}
+
+/* ── Media ── */
+@media (max-width: 768px) {
+  :root {
+    --section-py: 3.5rem;
+  }
+}

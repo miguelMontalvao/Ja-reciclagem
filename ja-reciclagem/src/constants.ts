@@ -24,3 +24,7 @@ export const GOOGLE_REVIEW_URL =
 /** Link para visualizar no Google Maps */
 export const GOOGLE_MAPS_URL =
   'https://www.google.com/maps?ftid=0x9be9d57b2f2cbb:0x549885e315e890b0'
+
+/** Créditos de desenvolvimento (rodapé) */
+export const DEVELOPER_NAME = 'Atylus Soluções Digitais'
+export const DEVELOPER_URL = 'https://atylus.com.br/'

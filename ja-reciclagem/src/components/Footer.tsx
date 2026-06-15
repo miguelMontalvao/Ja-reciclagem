@@ -1,6 +1,6 @@
-import { MapPin, Phone, Clock, Instagram, Facebook } from 'lucide-react'
+import { MapPin, Phone, Clock } from 'lucide-react'
 import logo from '../assets/logo.jpeg'
-import { WHATSAPP_NUMBER, WHATSAPP_URL, GOOGLE_MAPS_URL, GOOGLE_REVIEW_URL } from '../constants'
+import { WHATSAPP_NUMBER, WHATSAPP_URL, GOOGLE_MAPS_URL, GOOGLE_REVIEW_URL, DEVELOPER_NAME, DEVELOPER_URL } from '../constants'
 import './Footer.css'
 
 export default function Footer() {
@@ -79,7 +79,17 @@ export default function Footer() {
       <div className="footer__bottom">
         <div className="container footer__bottom-inner">
           <p>© {year} J.A Comércio de Metais e Sucata. Todos os direitos reservados.</p>
-          <p className="footer__credits">Rio de Janeiro · RJ · Brasil</p>
+          <p className="footer__dev-credit">
+            Desenvolvido por{' '}
+            <a
+              href={DEVELOPER_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer__dev-link"
+            >
+              {DEVELOPER_NAME}
+            </a>
+          </p>
         </div>
       </div>
     </footer>

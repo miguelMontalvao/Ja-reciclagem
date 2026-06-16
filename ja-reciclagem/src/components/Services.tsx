@@ -6,17 +6,17 @@ const materiais = [
   {
     icon: <Wrench size={28} />,
     title: 'Sucata de Ferro',
-    desc: 'Compramos sucata de ferro em grandes quantidades: estruturas metálicas, chaparias, ferragens, peças diversas e todo tipo de material ferroso.',
+    desc: 'Compramos sucata de ferro, estruturas metálicas, chaparias, ferragens, e outros materiais ferrosos em grandes volumes.',
   },
   {
     icon: <Package2 size={28} />,
     title: 'Ferro Misto',
-    desc: 'Adquirimos ferro misto — mistura de metais ferrosos com outros materiais — com preço justo e avaliação transparente no ato da coleta.',
+    desc: 'Compramos ferro misto com avaliação justa e pesagem transparente, garantindo segurança em toda negociação',
   },
   {
     icon: <FileText size={28} />,
     title: 'Papelão',
-    desc: 'Compramos papelão em fardos ou solto, de ferro-velhos que acumulam embalagens e caixas. Coletamos junto com o ferro sem custo adicional.',
+    desc: 'Compramos papelão em fardos ou solto. A coleta é feita de forma independente, facilitando a logística e a organização operacional',
   },
 ]
 
@@ -99,7 +99,7 @@ export default function Services() {
               className="btn btn-whatsapp"
             >
               <MessageCircle size={18} />
-              Solicitar Coleta Agora
+              Falar com a Equipe
             </a>
           </div>
         </div>

@@ -46,7 +46,8 @@ export default function Machinery() {
           <div className="divider divider--light" />
           <p className="section-lead section-lead--light">
             Investimos em equipamentos modernos para entregar agilidade, segurança
-            e confiabilidade em cada visita ao seu ferro-velho.
+            e confiabilidade em cada visita ao seu ferro-velho. Nossa estrutura operacional permite atender
+            desde pequenos volumes até grandes cargas com rapidez e segurança.  
           </p>
         </div>
 

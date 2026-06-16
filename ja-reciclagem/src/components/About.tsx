@@ -10,12 +10,12 @@ const milestones = [
 ]
 
 const diferenciais = [
-  'Coleta realizada diretamente no seu ferro-velho',
-  'Pagamento imediato no ato da pesagem',
-  'Maquinário moderno para agilidade na carga',
+  'Pesagem transparente e confiável',
+  'Pagamento imediato após a conferência',
+  'Maquinário próprio para movimentação de sucata',
   'Equipe experiente e comprometida',
   'Atendimento a ferro-velhos de todos os portes',
-  'Mais de 30 anos de reputação no mercado carioca',
+  'Mais de 10 anos de atuação no mercado',
 ]
 
 export default function About() {
@@ -44,21 +44,22 @@ export default function About() {
         <div className="about__text">
           <p className="section-eyebrow">Nossa História</p>
           <h2 className="section-title">
-            Mais de 30 anos movendo o ciclo da reciclagem no Rio
+            Mais de 10 anos impulsionando a reciclagem no Rio de Janeiro
           </h2>
           <div className="divider" />
 
           <p className="section-lead">
-            Fundada no Rio de Janeiro nos anos 90, a J.A Comércio de Metais e Sucata
-            nasceu com uma missão clara: ser o elo confiável entre o ferro-velho e
-            o ciclo produtivo da reciclagem. Ao longo de três décadas, consolidamos
-            nossa presença no estado com seriedade, pontualidade e respeito por cada parceiro.
+            A J.A Comércio de Metais e Sucata atua há mais de 10 anos
+            na compra de ferro, sucata ferrosa e papelão. Ao longo
+            desse período construímos uma reputação baseada em
+            transparência, agilidade e compromisso com nossos parceiros.
           </p>
 
           <p className="about__p">
             Trabalhamos exclusivamente com ferro-velhos, comprando sucata de ferro,
-            ferro misto e papelão em grandes volumes. Diferente de outros compradores,
-            <strong> nós vamos até você</strong>: nossa equipe desloca o maquinário
+            ferro misto e papelão em grandes volumes. Nossa operação conta com maquinário próprio para
+            movimentação e carregamento de grandes volumes,
+            <strong> garantindo eficiência, segurança e rapidez em cada coleta</strong>: nossa equipe desloca o maquinário
             e a frota até o seu pátio, realiza a pesagem no local e efetua o pagamento
             de forma imediata e transparente.
           </p>

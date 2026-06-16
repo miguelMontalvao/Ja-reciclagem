@@ -15,18 +15,19 @@ export default function Hero() {
 
       <div className="container hero__content">
         <p className="hero__eyebrow animate-fade-up">
-          Rio de Janeiro · Desde 1994
+          Rio de Janeiro · Mais de 10 anos de experiência
         </p>
 
         <h1 className="hero__title animate-fade-up delay-100">
           Transformamos <br />
-          <span className="hero__title--accent">Sucata em Valor</span>
-          <br /> há mais de 30 anos
+          <span className="hero__title--accent">Sucata em Oportunidade</span>
+          <br /> há mais de 10 anos
         </h1>
 
         <p className="hero__lead animate-fade-up delay-200">
-          Compramos sucata de ferro, ferro misto e papelão diretamente
-          do seu ferro-velho. Coletamos no seu local e pagamos na hora — sem burocracia.
+          Especialistas na compra de ferro, sucata ferrosa e papelão.
+          Atendemos ferro-velhos e empresas com pesagem transparente,
+          pagamento imediato e maquinário próprio.
         </p>
 
         <div className="hero__actions animate-fade-up delay-300">
@@ -37,7 +38,7 @@ export default function Hero() {
             className="btn btn-whatsapp hero__btn-wa"
           >
             <MessageCircle size={18} />
-            Quero Vender Minha Sucata
+            Solicitar Avaliação
           </a>
           <a href="#sobre" className="btn btn-outline">
             Conheça Nossa História
@@ -55,7 +56,7 @@ export default function Hero() {
             Avalie no Google
           </a>
           <span className="hero__badge hero__badge--stat">
-            30+ Anos de Experiência
+            +10 Anos de Mercado
           </span>
           <span className="hero__badge hero__badge--stat">
             Coleta em Todo o Rio

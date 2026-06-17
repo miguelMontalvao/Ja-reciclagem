@@ -1,9 +1,9 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
-import Services from './components/Services'
-import Machinery from './components/Machinery'
+import ServicesMaterials from './components/ServicesMaterials'
 import Location from './components/Location'
+import ServicesHowItWorks from './components/ServicesHowItWorks'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import WhatsAppButton from './components/WhatsAppButton'
@@ -16,9 +16,9 @@ export default function App() {
       <main>
         <Hero />
         <About />
-        <Services />
-        <Machinery />
+        <ServicesMaterials />
         <Location />
+        <ServicesHowItWorks />
         <Contact />
       </main>
       <Footer />

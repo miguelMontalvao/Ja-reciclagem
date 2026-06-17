@@ -29,8 +29,8 @@ export default function Footer() {
         <div className="footer__col">
           <h4 className="footer__col-title">Navegação</h4>
           <ul className="footer__links">
-            {['#hero', '#sobre', '#servicos', '#maquinario', '#localizacao', '#contato'].map((href, i) => {
-              const labels = ['Início','Sobre Nós','Serviços','Maquinário','Localização','Contato']
+            {['#hero', '#sobre', '#servicos', '#localizacao', '#contato'].map((href, i) => {
+              const labels = ['Início','Sobre Nós','Serviços','Localização','Contato']
               return (
                 <li key={href}>
                   <a href={href} className="footer__link">{labels[i]}</a>

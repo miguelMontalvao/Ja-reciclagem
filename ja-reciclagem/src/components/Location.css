@@ -29,7 +29,7 @@
 }
 
 .location__detail-label {
-  font-size: 0.72rem;
+  font-size: 0.85rem;
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -38,7 +38,7 @@
 }
 
 .location__detail-value {
-  font-size: 0.95rem;
+  font-size: 1.08rem;
   color: var(--gray-800);
   font-weight: 500;
   text-decoration: none;
@@ -50,7 +50,7 @@ a.location__detail-value:hover {
 }
 
 .location__address-link span {
-  font-size: 0.82rem;
+  font-size: 0.95rem;
   color: var(--green-600);
   font-weight: 600;
 }
@@ -81,8 +81,8 @@ a.location__detail-value:hover {
 .location__hour-row {
   display: flex;
   justify-content: space-between;
-  padding: 0.55rem 1rem;
-  font-size: 0.85rem;
+  padding: 0.6rem 1rem;
+  font-size: 0.98rem;
   border-bottom: 1px solid var(--gray-100);
 }
 
@@ -114,12 +114,12 @@ a.location__detail-value:hover {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.65rem 1.25rem;
+  padding: 0.7rem 1.35rem;
   background: #FBBC04;
   color: #1a1a1a;
   border-radius: 6px;
   font-family: var(--font-display);
-  font-size: 0.82rem;
+  font-size: 0.95rem;
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;

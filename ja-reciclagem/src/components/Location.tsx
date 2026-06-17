@@ -3,11 +3,11 @@ import { WHATSAPP_NUMBER, WHATSAPP_URL, GOOGLE_REVIEW_URL, GOOGLE_MAPS_URL } fro
 import './Location.css'
 
 const horarios = [
-  { dia: 'Segunda-feira',  hora: '08:00 – 18:00' },
-  { dia: 'Terça-feira',    hora: '08:00 – 18:00' },
-  { dia: 'Quarta-feira',   hora: '08:00 – 18:00' },
-  { dia: 'Quinta-feira',   hora: '08:00 – 18:00' },
-  { dia: 'Sexta-feira',    hora: '08:00 – 18:00' },
+  { dia: 'Segunda-feira',  hora: '08:00 – 17:00' },
+  { dia: 'Terça-feira',    hora: '08:00 – 17:00' },
+  { dia: 'Quarta-feira',   hora: '08:00 – 17:00' },
+  { dia: 'Quinta-feira',   hora: '08:00 – 17:00' },
+  { dia: 'Sexta-feira',    hora: '08:00 – 17:00' },
   { dia: 'Sábado',         hora: 'Fechado' },
   { dia: 'Domingo',        hora: 'Fechado' },
 ]

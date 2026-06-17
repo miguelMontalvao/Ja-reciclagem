@@ -19,7 +19,7 @@ export default function Footer() {
             </div>
           </div>
           <p className="footer__about">
-            Há mais de 30 anos sendo o parceiro confiável dos ferro-velhos cariocas.
+            Há mais de 10 anos sendo o parceiro confiável dos ferro-velhos cariocas.
             Compramos sucata de ferro, ferro misto e papelão, coletamos no seu pátio
             e pagamos na hora.
           </p>
@@ -58,7 +58,7 @@ export default function Footer() {
             </li>
             <li>
               <Clock size={14} />
-              <span>Seg–Sex: 08h–18h</span>
+              <span>Seg–Sex: 08h–17h</span>
             </li>
           </ul>
 

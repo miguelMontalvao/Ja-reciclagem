@@ -44,12 +44,10 @@ export default function Contact() {
         <div className="contact__card">
           <h3 className="contact__card-title">Por que escolher a J.A?</h3>
           <ul className="contact__reasons">
-            {[
-              'Coleta gratuita no seu ferro-velho',
+            {[            
               'Pagamento imediato na hora da pesagem',
               'Maquinário próprio e moderno',
-              'Mais de 30 anos de confiança no RJ',
-              'Atendemos todo o Estado do Rio de Janeiro',
+              'Mais de 10 anos de confiança no RJ',              
               'Equipe profissional e comprometida',
             ].map(r => (
               <li key={r} className="contact__reason">

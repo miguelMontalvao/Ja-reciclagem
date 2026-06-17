@@ -59,7 +59,7 @@ export default function Hero() {
             +10 Anos de Mercado
           </span>
           <span className="hero__badge hero__badge--stat">
-            Coleta em Todo o Rio
+            Coleta Ágil e Segura
           </span>
         </div>
       </div>

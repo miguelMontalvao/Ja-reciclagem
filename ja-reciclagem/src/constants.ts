@@ -4,10 +4,10 @@
 // =============================================
 
 /** Número de WhatsApp (apenas dígitos, com DDD e código do país) */
-export const WHATSAPP_RAW = '5521999999999' // ← SUBSTITUIR pelo número real
+export const WHATSAPP_RAW = '5521970480520' // ← SUBSTITUIR pelo número real
 
 /** Número formatado para exibição */
-export const WHATSAPP_NUMBER = '(21) 99999-9999' // ← SUBSTITUIR pelo número real
+export const WHATSAPP_NUMBER = '(21) 97048-0520' // ← SUBSTITUIR pelo número real
 
 /** Mensagem pré-preenchida no WhatsApp */
 const WA_MESSAGE = encodeURIComponent(
